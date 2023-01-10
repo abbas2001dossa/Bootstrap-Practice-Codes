@@ -1,0 +1,149 @@
+<!-- 
+    GRID LEVEL -==> sizes 
+
+    XL  -  col-xl-[]   - []=> number of cols ( 1-12  )of widths we would allocate to it 
+    L - col-lg-[]
+    M -  col-md-[]
+    S-    col-sm-[]
+    XS-    NO SIZE 
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/lec2/css folder/css/bootstrap.css">
+</head>
+<style>
+    /* div{
+        border: 2px solid red ;
+    } */
+
+    body{
+        background-color: grey;
+    }
+
+    #header{
+        background-color: orange;
+    }
+
+    
+
+
+    #content{
+        background-color: white;
+    }
+
+
+    #side{
+        background-color: rgb(67, 154, 247);
+    }
+
+
+    #footer{
+        background-color: orange;
+    } 
+
+    #navbar{
+        background-color: pink;
+        padding: 3px 0px ;
+    }
+
+    #navbar ul{
+        list-style: none;
+        margin: 0;
+    }
+
+    #navbar ul li{
+        /* list-style: none; */
+        display:inline-block ;
+
+    }
+
+
+
+    /*  WE want that jesa he xs small size ajaye ( small mobile phone size  --- 360x[]  ) */
+    /* to automatically responsive bhi hojaye !  and space isnt wasted  */
+
+
+
+
+
+</style>
+<body>
+
+    <div class="container">
+        <!-- //website name  -->
+        <div class="row" id="header">
+            <div class="col-12">
+                <h1> Website name </h1>
+            </div>
+        </div>
+
+        <!-- navbar /menu -->
+        <div class="row">
+            <div class="col-12" id="navbar">
+                <ul>
+                    <li><a href=""> Home </a></li>
+                    <li><a href=""> About </a></li>
+                    <li><a href=""> Galllery</a></li>
+                    <li><a href=""> Product</a></li>
+                    <li><a href=""> Contact Us </a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!--  -->
+        <div class="row">
+            
+            <div class=" col-lg-8 col-md-4" id="content">
+                <h2> SUb Heading </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vel ducimus laboriosam. Eius natus aut incidunt voluptates. Illum totam explicabo magni laborum minima perferendis ducimus, itaque omnis fugiat fugit ad ea voluptatibus delectus error in mollitia magnam pariatur corrupti unde a? Maiores nobis unde eligendi illo enim nemo adipisci consequuntur hic at impedit eveniet dolore odit dolores qui dicta aut similique dignissimos reiciendis, ut ipsam sit voluptatum cum asperiores? Architecto labore odit deleniti expedita rerum, veniam dolorem inventore id! Doloremque blanditiis voluptates laboriosam, accusantium facilis aliquam non itaque expedita iste officiis ducimus sunt aperiam sit aut nam consequatur exercitationem distinctio obcaecati et. Officiis quas aliquid sunt culpa adipisci! Similique sapiente ab dignissimos minima eligendi quidem ad nulla saepe tenetur reiciendis quod dicta, quas nihil beatae!</p>
+
+            </div>
+            <!--  the col-md-[]  -- they all should sum to 12 !  -->
+            <!-- md-4   ==>jesa he medium se nechay jayega side  necha cahla jayge  -->
+            <div class="col-md-8 col-lg-4" id="side">
+                <ul>
+                    <li><a href=""> Home </a></li>
+                    <li><a href=""> About </a></li>
+                    <li><a href=""> Galllery</a></li>
+                    <li><a href=""> Product</a></li>
+                    <li><a href=""> Contact Us </a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+
+        <!-- footer  -->
+        <div class="row" id="footer">
+            <div class="col-12">
+                @copyright 2020.
+            </div>
+        </div>
+
+
+
+    </div>
+    
+    
+</body>
+</html>

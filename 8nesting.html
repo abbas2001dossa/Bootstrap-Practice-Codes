@@ -1,0 +1,84 @@
+<!-- 
+    >  nesting in accordance to bhootstrap ! 
+
+
+
+    col class ke andr col class banana 
+
+    for example :-
+     - consider a row which has two col classes of col-md-8   and col-md-4   => 12
+     - for nesting 
+     - the col-md-8 we will put another row and add col classes in that row with respect to that .
+     => those col classes also should equal 12 widths ! 
+
+
+
+ -->
+
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/lec2/css folder/css/bootstrap.css">
+    <style>
+         .container{
+            border: 2px solid black ;
+
+        }
+
+        .row{
+            border: 2px solid red ;
+        }
+
+        .pink{
+            background: pink;
+        }
+
+        .orange{
+            background: orange;
+        }
+
+        .blue{
+            background: blue;
+        }
+
+        .green{
+            background: green;
+
+        }
+
+
+    </style>
+ </head>
+ <body>
+
+    <div class="contain">
+        <div class="row">
+            <div class="col-md-6 pink">
+                <h2> heading </h2>
+                <!-- to add another row to it  [ nesting  ]-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3> subheading </h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias quo suscipit fuga incidunt ex commodi est architecto harum voluptate officia asperiores quos aspernatur magnam, debitis voluptas tempore eaque, laboriosam odio soluta sapiente necessitatibus quam!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3> subheading </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo velit assumenda maiores facilis eaque, quibusdam nostrum inventore tempore dolorem, perspiciatis officia debitis exercitationem! Reprehenderit tempore nisi, sunt veritatis est illo vero voluptatum minus cum.</p>                        
+                    </div>
+                    <div class="col-md-2">
+                        hello
+                        <!--  ek column ke andr aur bhi nesting krskte hen -> by adding a row and then more columns to it  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+ </body>
+ </html>

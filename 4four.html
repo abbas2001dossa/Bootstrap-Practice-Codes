@@ -1,0 +1,107 @@
+<!--  THIS video explaint he col classs in the bootstrap  -->
+
+<!-- 
+    -whenever we use equal width tags 
+    -suppose we have a dic -> we will use col class so we can divide two equals divs inside a div
+    - equal divs -> major use of a col class 
+    - layout -> we need a contianer , row , col class 
+    - parent -> container class
+    - container ke andr -- row class
+    - row ke andr col class he hoggi 
+
+
+    - col class -> responsiveness is valid too ! 
+    - auto responsive col class 
+
+
+    - class w-100 used in div --- would be a break -
+    like the class beefore this break would cover the width and the divs after the break
+    would cover rest
+
+    - the breaiks mentioned above were made manually -> to amke it automatically 
+    -> we can do tit in such a  wway that ->
+    define a row would have how many divs 
+    ---- that class is called : row-cols-2
+    row-cols-()  -> this number would be the amouunt of cols youwant to keep in one row 
+    class="row-cols-2"   -- for example ! 
+
+
+    - advanced version -> 
+
+    cols --- class
+    XL   col-xl
+    L    col-lg
+    M    col-md
+    S   col-
+    XS  col- 
+
+
+
+ -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/lec2/css folder/css/bootstrap.css">
+    <style>
+
+        .container{
+            border: 6px solid black ;
+        }
+
+        .row{
+            border: 3px solid maroon;
+            padding: 15px;
+        }
+
+        .col{
+            border: 3px solid rgb(132, 43, 116);
+            padding: 12px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="row">
+            <div class="col"> col 1 </div>
+            <div class="col"> col 2 </div>
+        </div>
+
+        <div class="row row-cols-2">
+            <div class="col"> col 1 </div>
+            <div class="w-100"></div>
+            <div class="col"> col 2 </div>
+            <div class="col"> col 3 </div>
+            <div class="col" > col 4 </div>
+
+        </div>
+        
+        
+        <!-- using row-cols-2   class  ---- not working ?? -->
+        <div class="row row-cols-2">
+            <div class="col"> col 1 </div>
+            <div class="col" > col 2 </div>
+            <div class="col" > col 3 </div>
+            <div class="col-lg"> col 4</div>
+            <div class="col-lg" > col 5 </div>
+            <div class="col-lg" > col 6 </div>
+            <!--  jesa he large se necchay jayega iski width 100% hojayega and it would become responsiveness --- width 100% 
+            means the width would be full screen sized !  -->
+        </div>
+
+    </div>
+    
+</body>
+</html>

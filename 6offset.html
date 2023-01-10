@@ -1,0 +1,87 @@
+<!--  OFF SET CLASS -->
+
+
+<!-- 
+     ooffset -> helper class of col class -> cols se space chordeta he 
+
+    -    offset-md-3 
+    -    This means offset 3 cols ki length chordega 
+    -    med  => means that its gonna work till medium class and below
+        that it wouldnt work ! 
+
+    - after one offset agr ek aur offset ayega to pehla space chorega aur beech me 
+
+    - offset apne se pehla space chorega 
+
+    XL    offset-xl-[]
+    L     offset-lg-[]
+    M     offset-md-[]
+    S     offset-sm-[]
+    XS    NO SIZE 
+                        =>  0-11
+                        => works responsively 
+
+
+    -    offset-[]    => 1-12
+                      => Doesnt work responsively 
+
+
+
+
+ -->
+
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/lec2/css folder/css/bootstrap.css">
+
+    <style>
+
+        .container{
+            border: 2px solid black ;
+
+        }
+
+        .row{
+            border: 2px solid red ;
+        }
+
+        .pink{
+            background: pink;
+        }
+
+        .orange{
+            background: orange;
+        }
+
+        .blue{
+            background: blue;
+        }
+
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 pink offset-md-3 offset-lg-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aliquam sit ipsam, blanditiis repudiandae suscipit beatae amet nihil minima distinctio velit harum omnis earum similique quos, ipsum error deleniti tempore.
+
+            </div>
+            <!-- md => screen size ===> responsive banadega  -->
+            <!-- medium pe upr necah ajata  he  -->
+            <div class="col-md-3 blue offset-md-2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam ducimus dolorum architecto molestias laudantium delectus nulla enim consequatur voluptas iste accusantium odio, natus, harum cumque adipisci! Nam magni ipsum dolorum.
+
+            </div>
+        </div>
+    </div>
+
+
+ </body>
+ </html>

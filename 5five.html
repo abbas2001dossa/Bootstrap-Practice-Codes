@@ -1,0 +1,72 @@
+<!-- BOOTSTRAP CSS GRID COLUMN !  -->
+
+<!-- 
+    - to make a website -> conatineer , row col 
+    - in this lec -> col class ka adv version 
+
+    -bootstrap grid suystem -> 12 grid can be made == 12 col can be there
+    - this grid system would do the work of width 
+
+    col-3  =>   3 column ki width lelega wo 
+    col-4  =>   4 col .....
+    // remember total would be 12 columns i grid!
+    - all this takes place inside the row since - col -> row 
+
+    - if col-6  => and the total width / total columns exceeds 12 it would go to the new row ! 
+    - the row class can be the navigation bar , the website header , the footer or any other elemetns which are block 
+
+    ==> col-12   or col   classs =>> is the same thing 
+
+
+
+
+
+
+
+
+
+
+ -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  oo</title>
+    <link rel="stylesheet" href="/lec2/css folder/css/bootstrap.css">
+    <style>
+        .container{
+            border: 2px solid blue ;
+        }
+
+        div{
+            border: 1px solid green ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- total columns would be 12 ==> hence the maximum cols for a grid  -->
+            <div class="col-8"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed accusantium possimus animi quidem distinctio dignissimos, maxime provident, aspernatur eveniet fugiat debitis dolorem. Repellat aperiam at, consectetur quisquam quod vero quaerat.</div>
+            <div class="col-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati exercitationem, aspernatur delectus provident inventore ipsum cum quidem deserunt. Natus in ullam impedit unde cupiditate deleniti vero ex autem et commodi. </div>
+
+        </div>
+        <div class="row">
+            <!-- total columns would be 12 ==> hence the maximum cols for a grid  -->
+            <div class="col-3"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed accusantium possimus animi quidem distinctio dignissimos, maxime provident, aspernatur eveniet fugiat debitis dolorem. Repellat aperiam at, consectetur quisquam quod vero quaerat.</div>
+            <div class="col-6"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati exercitationem, aspernatur delectus provident inventore ipsum cum quidem deserunt. Natus in ullam impedit unde cupiditate deleniti vero ex autem et commodi. </div>
+
+        </div>
+        <!-- its also responsive no matter how many columns u put it in  -->
+        <!--  agr ek row ,e jop coluymns hogga unka suum greater than 12 hoga => to wo next line me shift hojayenag  -->
+    </div>
+</body>
+</html>

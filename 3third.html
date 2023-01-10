@@ -1,0 +1,118 @@
+<!--  there are different classres in bootstrap for the page design !  -->
+<!--  row , col , conatiner  -->
+
+<!--
+    .container class =>>
+    {
+        width would be 1140px
+        page centered 
+
+        conatiners wisth changes -> xl l m s xs
+        xl -> 1200px or above 1200
+        large >= 992px
+        medium >= 768px 
+        small >= 576 / tabs 
+        xs -> <576px /mobiles --- auto width 
+        //-> thus each sizzehas its own media queriies -> and its sizwe therefore changes to its repect khud se 
+
+
+
+
+
+    }
+
+    .container-fluid{
+
+        width full 100%
+
+    }
+
+
+
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--
+        this meta tag is necessary -> 
+        viewport-> width of device 
+        device-width -> device ke andr he rahay - baher na jaye 
+        intial..-> zoom in to 1 ratio 
+        etc 
+
+
+    -->
+
+    <title> CONTAINERS AND </title>
+    <link rel="stylesheet" href="css folder/css/bootstrap.css">
+    <!-- css file should be below bootstrap  -->
+    <!-- you could also make another style.css and add it or add it directly like this  -->
+    <style>
+        .container{
+            border: 6px solid black ;
+        }
+
+        .container-fluid{
+            border: 6px solid black ;
+        }
+
+        .row{
+            border: 3px solid red ;
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CONTAINER AND CONTAINER FLUID    CLASS -->
+
+<!--  -->
+
+    <!-- <div class="container"> Dossa's WEB</div> -->
+
+    <!-- <div class="container-fluid"> Dossa's WEB</div> -->
+
+
+<!--  -->
+    <!-- // this fits to full length !// -0 auto for all - however that wasnt the case with 
+    oinli container classs !  -->
+
+    
+
+
+
+
+
+
+    <!-- ROW CLASS -->
+
+    <!-- 
+        -jitna bhi divs hen usme ham ek row class lagatay hen ! 
+        -hr chez me row -> navbar, content etc , footer etccc
+
+
+
+    -->
+
+
+    <div class="container">
+        <div class="row"> Row-1  </div>
+        <div class="row"> Row-2  </div>
+        <div class="row"> Row-3  </div>
+        <!-- jis conatiner me hoga usi me fit hoajye ga -> class row  -->
+        <!-- row class would always be useed insidre the container !  -->
+        
+
+    </div>
+
+
+</body>
+</html>

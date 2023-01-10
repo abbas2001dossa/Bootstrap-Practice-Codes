@@ -1,0 +1,120 @@
+<!-- REORDERING CLASSES  -->
+
+<!-- 
+
+    - reorderigng means changing position of cols. reordering them .
+    - order-first ==> pehla 
+    -  order-last  ==> akhri 
+
+
+
+    `RESPONSIVENESS 
+
+    XL   order-xl-first   order-xl-last
+    L    order-ls--first    //
+    M    order-md-first     //
+    S    order-sm-first     //
+    XS   no size - since thhsi is the smallest size 
+        ek ke nechay ek ajati he 
+
+
+        ye sab [] is se nechay ayega to wouldnt work ! 
+
+    // to change position =>
+    order-0   first place
+    order-1   second place 
+    order-2  third place 
+    order-3  fourth place 
+
+
+
+    XL   order-xl-[]
+    L    order-lg-[]
+    M   order-md-[]
+    S   order-sm-[]
+    XS
+    => 0-12 -- sequencing 
+
+
+
+
+
+
+ -->
+
+
+
+
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/lec2/css folder/css/bootstrap.css">
+    <style>
+         .container{
+            border: 2px solid black ;
+
+        }
+
+        .row{
+            border: 2px solid red ;
+        }
+
+        .pink{
+            background: pink;
+        }
+
+        .orange{
+            background: orange;
+        }
+
+        .blue{
+            background: blue;
+        }
+    </style>
+</head>
+ <body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col orange order-md-last"> col 1 </div>
+            <div class="col pink"> col 2</div>
+            <div class="col blue order-md-first"> col 3 </div>
+            <!-- below md it would turn its normal order and wont reofder wont on it  !  -->
+            <div class="col green"> col 4 </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col orange order-2"> col 1 </div>
+            <div class="col pink order-3"> col 2</div>
+            <div class="col order-4 blue"> col 3 </div>
+            <div class="col order-1 green"> col 4 </div> -->
+
+            <!-- //to amke it rewsponsive --- md / lg etc -->
+        
+            <div class="col orange order-md-2"> col 1 </div>
+            <div class="col pink order-md-3"> col 2</div>
+            <div class="col order-md-4 blue"> col 3 </div>
+            <div class="col order-md-1 green"> col 4 </div>
+        </div>
+    </div>
+
+
+ </body>
+ </html>

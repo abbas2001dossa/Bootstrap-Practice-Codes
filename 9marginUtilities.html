@@ -1,0 +1,167 @@
+<!-- 
+    margi utiltilities in css / bootstrap 
+
+
+    > suppose u have made a class and you have made aa column ->but yopu want to centre the column ! 
+    inbu8ilt class ->       .m-auto   
+    // isko use krke kisi col class ko hum centre krskte 
+
+
+    > ifypu want to put it on exafct right side 
+    ==> mr-auto     . right side se margin auto miljaygea 
+
+
+
+
+
+
+    > kisi breakpoiont pe ,d-auto ke tor pe kam kre aur phir hat jaye sooo
+
+    // agr kisi div ko siurff xl ko auto krna change so add xl to it 
+    // xl tk ye class folow kregi margin weali usken nechay nhi kregi aur follow ! 
+    // so is the case with opther sizes as well 
+
+    //auto gives margi from all 4 sides 
+    XL   m-xl-auto
+    L    m-lg-auto   
+    M    m-md-auto
+    S    m-sm-auto
+    XS   =
+    `
+
+
+
+
+    > marign classes for different sides 
+
+    MArgin              m-[]     // from all sides 
+    margin-right        mr-[]
+    margin-left         ml-[]
+    //-top                mt-[]
+    //-bottom             mb-[]
+
+            ==>  THE  [] SIZES are 0-5.
+
+            0 -  0px 
+            1- 0.25 rem
+            2- 0.50 rem
+            3- 1rem
+            4- 1.5 rem
+            5-  3rem 
+
+
+   > if you want to pu the above marign with the help opf different breakpoints to ensure responsivenesss 
+   
+    XL      m-xl-[]     //similaryl     mr-xl-[]    ml-xl-[]    mt-xl-[]    mb-xl-[]
+    L       mr-lg-[]
+    M       m-md-[]
+    S       m-sm-[]
+    XS       -
+
+                => []    ->    0-5  which have different rem as mentioned above 
+
+
+                eg => mt-md-4    = margin medium tk chalegauske nechay margin top nhi dega ye! 
+
+    
+
+    > ALL these margins can also be addedwith negative sign - for thatwe justhahve to add     -n
+    eg
+    m-xl-n4
+    m-md-n3
+    mr-sm-n2
+    -n   => negative
+    
+
+
+
+ -->
+
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/lec2/css folder/css/bootstrap.css">
+    <style>
+         .container{
+            border: 2px solid black ;
+
+        }
+
+        .row{
+            border: 2px solid red ;
+        }
+
+        .pink{
+            background: pink;
+        }
+
+        .orange{
+            background: orange;
+        }
+
+        .blue{
+            background: blue;
+        }
+
+        .green{
+            background: green;
+
+        }
+
+    </style>
+ </head>
+ <body>
+
+
+    <div class="container">
+        <div class="row">
+
+            <!--  what will u add if youwant to cnetre this div ==>  -->
+            <!-- -auto ==== ye hrtrf se margin dedegi  -->
+            <!--  for margin left auto --- ml-auto  -->
+            <!-- for maargin right aauto == mr-auto -->
+
+            <!--  all these classes would work for all sizessince they are responsive now !  -->
+
+            <div class="col-md-3 ml-auto orange"> 
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum quaerat necessitatibus distinctio quo! Reprehenderit, sed illum corporis enim fugiat voluptatem eius, voluptate omnis ad accusamus id dignissimos dolorum. Tempore cum possimus consequatur error illo?
+
+            </div>
+
+
+            <div class="col-md-4 green">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum ipsam quia, natus mollitia cumque officia saepe autem repellendus blanditiis quae consequatur a deserunt veritatis dolorum culpa numquam. Vitae laborum aliquid modi dolorum quasi?
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- MARGIN AUTO CLASSES FOR DIFFERENT BREAK POINTS  -->
+    
+    <div class="container">
+        <div class="row">
+            <!-- jab tk size xl he div auto margin rahega aur uske nechay nhi rahega -->
+            <div class="col-md-3 orange ">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet labore delectus porro quas pariatur et. Maiores sint sequi est quis nihil ea suscipit, consectetur rem velit ducimus voluptatibus ex alias eum nisi soluta qui.
+
+            </div>
+
+            <!-- margin left 3  -->
+            <div class="col-md-4 ml-3 green">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorum neque esse quis, exercitationem, quisquam dolorem velit rerum voluptatum aliquid debitis dicta, cum perferendis culpa dignissimos eaque sequi at molestiae repellendus reiciendis et rem?
+
+            </div>
+        </div>
+    </div>
+ </body>
+ </html>
